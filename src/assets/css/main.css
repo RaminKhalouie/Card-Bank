@@ -575,6 +575,8 @@ html{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
     position: absolute;
     top: 0;
     left: 0;
@@ -589,28 +591,20 @@ html{
   position: absolute;
 }
 
-.left-0 {
-  left: 0px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.left-8 {
-  left: 2rem;
-}
-
-.bottom-8 {
-  bottom: 2rem;
-}
-
 .bottom-4 {
   bottom: 1rem;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .right-8 {
   right: 2rem;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .m-2 {
@@ -744,6 +738,10 @@ html{
   background-color: rgb(221 238 252 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#fff4\] {
+  background-color: #fff4;
+}
+
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
@@ -752,39 +750,6 @@ html{
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-\[w\] {
-  background-color: w;
-}
-
-.bg-\[\#\] {
-  background-color: #;
-}
-
-.bg-\[\#fff\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\#fff5\] {
-  background-color: #fff5;
-}
-
-.bg-\[\#fff2\] {
-  background-color: #fff2;
-}
-
-.bg-\[\#fff3\] {
-  background-color: #fff3;
-}
-
-.bg-\[\#fff4\] {
-  background-color: #fff4;
 }
 
 .object-cover {
@@ -822,24 +787,14 @@ html{
   color: rgb(55 65 81 / var(--tw-text-opacity, 1));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity, 1));
-}
-
-.text-stone-700 {
-  --tw-text-opacity: 1;
-  color: rgb(68 64 60 / var(--tw-text-opacity, 1));
-}
-
 .text-stone-900 {
   --tw-text-opacity: 1;
   color: rgb(28 25 23 / var(--tw-text-opacity, 1));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .shadow-2xl {
@@ -859,43 +814,12 @@ html{
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-.\[text-orient\:mixed\] {
-  text-orient: mixed;
-}
-
-.\[text-orient\:up\] {
-  text-orient: up;
-}
-
-.\[text-orient\:upright\] {
-  text-orient: upright;
-}
-
-.\[writing-mode\:vertical-lr\] {
-  writing-mode: vertical-lr;
-}
-
-.\[writing-mode\:vertical-rl\] {
-  writing-mode: vertical-rl;
-}
-
 .\*\:text-center > * {
   text-align: center;
 }
 
 .\*\:tracking-widest > * {
   letter-spacing: 0.1em;
-}
-
-.backdrop\:blur-md::backdrop {
-  --tw-blur: blur(12px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.backdrop\:backdrop-blur-md::backdrop {
-  --tw-backdrop-blur: blur(12px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .focus\:border-blue-500:focus {
@@ -906,16 +830,6 @@ html{
 @media (min-width: 768px) {
   .md\:w-8\/12 {
     width: 66.666667%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:\[writing-mode\:horizontal-tb\] {
-    writing-mode: horizontal-tb;
-  }
-
-  .lg\:\[writing-mode\:vertical-rl\] {
-    writing-mode: vertical-rl;
   }
 }
 

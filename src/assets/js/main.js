@@ -79,7 +79,7 @@ function SetBanckImage(cardNumber) {
     let imgName = "";
     switch (cardNumber) {
         case '606373':
-            imgName = "mehr.jpg";
+            imgName = "mehr.png";
             break;
         case '603799':
             imgName = "bmilogo.svg";
